@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de lojas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="content">
+        <form action="api.flit.com.br/submeterDados" method="post">
+            <label for="name">Nome</label>
+            <input type="text" name="name" id="name" value = "" placeholder="Ex: Otavio">
+            <label for="address">Endereço</label>
+            <input type="text" name="address" id="address" value = "" placeholder="Ex: Rua Manuel Carneiro">
+
+            <h3>Dias de funcionamento</h3>
+            <div>
+                <input type="radio" name="monday" id="monday" value = "operating days">
+                <label for="monday">Segunda-feira</label>
+            </div>
+            <div>
+                <input type="radio" name="tuesday" id="tuesday" value = "operating days">
+                <label for="tuesday">Terça-feira</label>
+            </div>
+            <div>
+                <input type="radio" name="wednesday" id="wednesday" value = "operating days">
+                <label for="wednesday">Quarta-feira</label>
+            </div>
+            <div>
+                <input type="radio" name="thursday" id="thursday" value = "operating days">
+                <label for="thursday">Quinta-feira</label>
+            </div>
+            <div>
+                <input type="radio" name="friday" id="friday" value = "operating days">
+                <label for="friday">Sexta-feira</label>
+            </div>
+            <div>
+                <input type="radio" name="saturday" id="saturday" value = "operating days">
+                <label for="saturday">Sábado</label>
+            </div>
+            <div>
+                <input type="radio" name="sunday" id="sunday" value = "operating days">
+                <label for="sunday">Domingo</label>
+            </div>
+
+            <label for="openingTime">Horário de abertura: </label>
+            <input type="time" name="openingTime" id="openingTime">
+            <label for="closingTime">Horário de fechamento: </label>
+            <input type="time" name="closingTime" id="closingTime">
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+</body>
+<script src="script.js"></script>
+</html>
